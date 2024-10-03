@@ -1,9 +1,10 @@
 import streamlit as st
 import requests
+import os
 
 # JDoodleのAPI情報（freeプラン）
-JDoodle_Client_ID = 
-JDoodle_Client_Secret = 
+JDoodle_Client_ID = st.secrets["client_id"]
+JDoodle_Client_Secret = st.secrets["client_secret"]
 
 # ファイルのアップロード
 uploaded_file = st.file_uploader("Upload your Java file", type="java")
